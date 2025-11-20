@@ -5,3 +5,15 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
 })
+
+
+// If using React Router, add this to vite.config.js to avoid 404s:
+
+// export default defineConfig({
+//   plugins: [react()],
+//   server: { port: 3000 },
+//   build: {
+//     outDir: 'dist'
+//   }
+// })
+
